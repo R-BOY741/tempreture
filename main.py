@@ -1,15 +1,14 @@
+
 from tkinter import *
 from tkinter import messagebox
 
 window = Tk()
-window.title('Temperature Convector')
+window.title('BMI Convector')
 window.minsize(width=500, height=500)
 
-celcius_var= IntVar
-fahrenheit_var =IntVar
 
 
-l1=LabelFrame(window,text='Celcius To Fahrenheit',padx=20, pady=20)
+l1=LabelFrame(window,text='BMI Convector',padx=20, pady=20)
 l1.grid(row=2, column=0)
 E1=Entry(l1,state='disable')
 E1.grid(row=4, column=0)
@@ -18,7 +17,7 @@ def Cel_Active():
     E2.configure(state='disable')
     E1.configure(state='normal')
 
-btn_active=Button(window,text='Activate -Celcius to Fahrenheit', command=Cel_Active)
+btn_active=Button(window,text='', command=Cel_Active)
 btn_active.grid(row=6, column=0)
 
 l2=LabelFrame(window, text='Fahrenheit to Celcius',padx=20, pady=20)
@@ -71,3 +70,4 @@ Clear_btn=Button(window, text='Clear',command=Clear)
 Clear_btn.grid(row=8, column=6)
 
 window.mainloop()
+
